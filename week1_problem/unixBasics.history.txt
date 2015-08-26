@@ -1,0 +1,1000 @@
+  119  rm 19_41_strain_isolates_V1-V2.trimmed.fasta 
+  120  ls
+  121  pwd
+  122  ls
+  123  cd ..
+  124  ls
+  125  cd ..
+  126  ls
+  127  cd ULCERS/
+  128  ls
+  129  cd 20_37_Ulcers_V1-V2.trimmed.fasta/
+  130  ls
+  131  for file in 'cat ../files'; do cd ../$file;rm -r 17_37_Ulcers_V1-V2.trimmed.fasta/; done;
+  132  ls
+  133  cd ../23_37_Ulcers_V1-V2.trimmed.fasta/
+  134  ls
+  135  for file in 'cat ../files'; do cd ../$file;rm -rf 17_37_Ulcers_V1-V2.trimmed.fasta/; done;
+  136  ls
+  137  cd ../17_37_Ulcers_V1-V2.trimmed.fasta/
+  138  ls
+  139  cat ../files 
+  140  for file in 'cat ../files'; do cd ../$file;rmdir -rf 17_37_Ulcers_V1-V2.trimmed.fasta/; done;
+  141  for file in 'cat ../files'; do cd ../$file;rmdir 17_37_Ulcers_V1-V2.trimmed.fasta/; done;
+  142  cd ../21_37_Ulcers_V1-V2.trimmed.fasta/
+  143  ls
+  144  rm -rf 17_37_Ulcers_V1-V2.trimmed.fasta/
+  145  ls
+  146  for file in 'cat ../files'; do cd ../$file;rm -rf 17_37_Ulcers_V1-V2.trimmed.fasta/; done;
+  147  cd ../17_37_Ulcers_V1-V2.trimmed.fasta/
+  148  ls
+  149  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/ULCERS/FastaFiles/17_37_Ulcers_V1-V2.trimmed.fasta .
+  150  ls
+  151  cd ../18_37_Ulcers_V1-V2.trimmed.fasta/
+  152  ls
+  153  cd ../19_37_Ulcers_V1-V2.trimmed.fasta/
+  154  ls
+  155  cd ../20_37_Ulcers_V1-V2.trimmed.fasta/
+  156  ls
+  157  cd ../21_37_Ulcers_V1-V2.trimmed.fasta/
+  158  ls
+  159  cd ../22_37_Ulcers_V1-V2.trimmed.fasta/
+  160  ls
+  161  cd ../23_37_Ulcers_V1-V2.trimmed.fasta/
+  162  ls
+  163  ls ../24_37_Ulcers_V1-V2.trimmed.fasta/
+  164  ls ../25_37_Ulcers_V1-V2.trimmed.fasta/
+  165  ls ../26_37_Ulcers_V1-V2.trimmed.fasta/
+  166  ls ../27_37_Ulcers_V1-V2.trimmed.fasta/
+  167  ls
+  168  ls ../28_37_Ulcers_V1-V2.trimmed.fasta/
+  169  ls ../29_37_Ulcers_V1-V2.trimmed.fasta/
+  170  ls ../30_37_Ulcers_V1-V2.trimmed.fasta/
+  171  ls ../31_37_Ulcers_V1-V2.trimmed.fasta/
+  172  ls ../32_37_Ulcers_V1-V2.trimmed.fasta/
+  173  ls ../33_37_Ulcers_V1-V2.trimmed.fasta/
+  174  ls
+  175  ls ../34_37_Ulcers_V1-V2.trimmed.fasta/
+  176  ;s ../35_37_Ulcers_V1-V2.trimmed.fasta/
+  177  ls ../35_37_Ulcers_V1-V2.trimmed.fasta/
+  178  ls ../36_37_Ulcers_V1-V2.trimmed.fasta/
+  179  ls ../37_37_Ulcers_V1-V2.trimmed.fasta/
+  180  ls
+  181  cd ../22
+  182  cd ../22_37_Ulcers_V1-V2.trimmed.fasta/
+  183  ls
+  184  cd ../21_37_Ulcers_V1-V2.trimmed.fasta/
+  185  ls
+  186  cd ../20_37_Ulcers_V1-V2.trimmed.fasta/
+  187  ls
+  188  cd ../19_37_Ulcers_V1-V2.trimmed.fasta/
+  189  ls
+  190  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/ULCERS/FastaFiles/19_37_Ulcers_V1-V2.trimmed.fasta .
+  191  ls
+  192  cd ../18_37_Ulcers_V1-V2.trimmed.fasta/
+  193  ls
+  194  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/ULCERS/FastaFiles/18_37_Ulcers_V1-V2.trimmed.fasta .
+  195  ls
+  196  cd ../17_37_Ulcers_V1-V2.trimmed.fasta/
+  197  ls
+  198  for file in `cat ../files`; do cd ../$file;cp -r /rsgrps/bhurwitz/xiang/16s/scripts/* .; done;
+  199  cd /rsgrps/bhurwitz/xiang/
+  200  ls
+  201  cd 41strain/
+  202  ls
+  203  cat files 
+  204  ls
+  205  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  206  ls
+  207  cd scripts/
+  208  ls
+  209  for file in `cat ../../files`; do cd ../../$file/scripts; rm *.o* ; done;
+  210  ls
+  211  cd ../../02_41_strain_isolates_V1-V2.trimmed.fasta/scripts/
+  212  ls
+  213  for file in `cat ../../files`; do cd ../../$file/scripts; ./testpipline.sh ; done;
+  214  cd ..
+  215  ls
+  216  qstat -u xiangl1
+  217  man qdel
+  218  qstat -u xiangl1
+  219  qselect -u <xiangl1> | xargs qdel
+  220  qselect -u xiangl1 | xargs qdel
+  221  qstat -u xiangl1
+  222  cd 
+  223  cd /rsgrps/bhurwitz/xiang/
+  224  ls
+  225  cd ULCERS/
+  226  ls
+  227  cd ../41strain/
+  228  ls
+  229  rm *.trimmed.fasta
+  230  rm -rf *.trimmed.fasta
+  231  ls
+  232  cd output/
+  233  ls
+  234  cat files
+  235  cd ..
+  236  cat files 
+  237  cd ..
+  238  ls
+  239  cd 16s
+  240  ls
+  241  cd scripts/
+  242  ls
+  243  cd workers/
+  244  ls
+  245  vi testpipeline_exec.sh 
+  246  ls
+  247  cd ..
+  248  ls
+  249  cd ..
+  250  ls
+  251  cd ..
+  252  cd 41strain/
+  253  ls
+  254  for file in `cat files`; do mkdir $file; done;
+  255  ls
+  256  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  257  ls
+  258  for file in `cat ../files`; do cd ../$file; cp -r /rsgrps/bhurwitz/xiang/16s/scripts/* .; done;
+  259  ls
+  260  cd ../01_41_strain_isolates_V1-V2.trimmed.fasta/
+  261  /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles
+  262  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/01_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/01_41_strain_isolates_V1-V2.trimmed.fasta/
+  263  ls
+  264  cd ..
+  265  ls
+  266  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/02_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/02_41_strain_isolates_V1-V2.trimmed.fasta/
+  267  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/03_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/03_41_strain_isolates_V1-V2.trimmed.fasta/
+  268  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/04_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/04_41_strain_isolates_V1-V2.trimmed.fasta/
+  269  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/05_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/05_41_strain_isolates_V1-V2.trimmed.fasta/
+  270  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/06_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/06_41_strain_isolates_V1-V2.trimmed.fasta/
+  271  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/07_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/07_41_strain_isolates_V1-V2.trimmed.fasta/
+  272  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/08_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/08_41_strain_isolates_V1-V2.trimmed.fasta/
+  273  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/09_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/09_41_strain_isolates_V1-V2.trimmed.fasta/
+  274  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/10_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/10_41_strain_isolates_V1-V2.trimmed.fasta/
+  275  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/11_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/11_41_strain_isolates_V1-V2.trimmed.fasta/
+  276  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/12_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/12_41_strain_isolates_V1-V2.trimmed.fasta/
+  277  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/13_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/13_41_strain_isolates_V1-V2.trimmed.fasta/
+  278  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/14_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/14_41_strain_isolates_V1-V2.trimmed.fasta/
+  279  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/15_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/15_41_strain_isolates_V1-V2.trimmed.fasta/
+  280  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/16_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/16_41_strain_isolates_V1-V2.trimmed.fasta/
+  281  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/17_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/17_41_strain_isolates_V1-V2.trimmed.fasta/
+  282  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/18_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/18_41_strain_isolates_V1-V2.trimmed.fasta/
+  283  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/19_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/19_41_strain_isolates_V1-V2.trimmed.fasta/
+  284  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/20_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/20_41_strain_isolates_V1-V2.trimmed.fasta/
+  285  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/21_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/21_41_strain_isolates_V1-V2.trimmed.fasta/
+  286  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/22_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/22_41_strain_isolates_V1-V2.trimmed.fasta/
+  287  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/23_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/23_41_strain_isolates_V1-V2.trimmed.fasta/
+  288  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/24_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/24_41_strain_isolates_V1-V2.trimmed.fasta/
+  289  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/25_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/25_41_strain_isolates_V1-V2.trimmed.fasta/
+  290  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/26_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/26_41_strain_isolates_V1-V2.trimmed.fasta/
+  291  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/27_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/27_41_strain_isolates_V1-V2.trimmed.fasta/
+  292  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/28_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/28_41_strain_isolates_V1-V2.trimmed.fasta/
+  293  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/29_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/29_41_strain_isolates_V1-V2.trimmed.fasta/
+  294  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/30_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/30_41_strain_isolates_V1-V2.trimmed.fasta/
+  295  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/31_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/31_41_strain_isolates_V1-V2.trimmed.fasta/
+  296  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/32_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/32_41_strain_isolates_V1-V2.trimmed.fasta/
+  297  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/33_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/33_41_strain_isolates_V1-V2.trimmed.fasta/
+  298  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/34_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/34_41_strain_isolates_V1-V2.trimmed.fasta/
+  299  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/35_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/35_41_strain_isolates_V1-V2.trimmed.fasta/
+  300  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/36_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/36_41_strain_isolates_V1-V2.trimmed.fasta/
+  301  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/37_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/37_41_strain_isolates_V1-V2.trimmed.fasta/
+  302  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/38_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/38_41_strain_isolates_V1-V2.trimmed.fasta/
+  303  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/39_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/39_41_strain_isolates_V1-V2.trimmed.fasta/
+  304  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/40_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/40_41_strain_isolates_V1-V2.trimmed.fasta/
+  305  cp /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/FastaFiles/41_41_strain_isolates_V1-V2.trimmed.fasta /rsgrps/bhurwitz/xiang/41strain/41_41_strain_isolates_V1-V2.trimmed.fasta/
+  306  ls
+  307  cd 19_41_strain_isolates_V1-V2.trimmed.fasta/
+  308  ls
+  309  pwd
+  310  vi config.sh 
+  311  ./testpipline.sh 
+  312  qdel 361846
+  313  qstat -u xiangl1
+  314  for file in `cat ../files` do cd ../$file;cp /rsgrps/bhurwitz/xiang/41strain/19_41_strain_isolates_V1-V2.trimmed.fasta/config.sh .; done
+  315  for file in `cat ../files` do cd ../$file; cp /rsgrps/bhurwitz/xiang/41strain/19_41_strain_isolates_V1-V2.trimmed.fasta/config.sh .; done
+  316  cd /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/
+  317  ls
+  318  cd George_Script_Results/
+  319  ls
+  320  cat SUMMARY.txt 
+  321  vi SUMMARY.txt 
+  322  qstat -u xiangl1
+  323  cd /rsgrps/bhurwitz/xiang/ULCERS/
+  324  ls
+  325  cd output/
+  326  ls
+  327  ls out50/
+  328  cat out50/06-chimera-check.log 
+  329  ls out51/
+  330  cat out51/06-chimera-check.log 
+  331  ls out52
+  332  cat out52/06-chimera-check.log 
+  333  cat out53/06-chimera-check.log 
+  334  ls out53
+  335  ls out51/
+  336  cat out51/06-chimera-check.log 
+  337  cd ..
+  338  ls
+  339  cd ..
+  340  cd 41strain/
+  341  ls
+  342  cd output/
+  343  ls
+  344  cat out01/05_trunc200_otus.fasta 
+  345  cat out02/05_trunc200_otus.fasta 
+  346  cat out03/05_trunc200_otus.fasta 
+  347  cd ..
+  348  cd 03_41_strain_isolates_V1-V2.trimmed.fasta/
+  349  ls
+  350  cd config.sh 
+  351  vi config.sh 
+  352  cd ..
+  353  ls
+  354  cd output/
+  355  ls
+  356  cat out04/05_trunc200_otus.fasta 
+  357  cat out06/05_trunc200_otus.fasta 
+  358  cat out07/05_trunc200_otus.fasta 
+  359  cat out08/05_trunc200_otus.fasta 
+  360  cat out09/05_trunc200_otus.fasta 
+  361  cat out06/05_trunc200_otus.fasta 
+  362  cat out05/05_trunc200_otus.fasta 
+  363  cat out12/05_trunc200_otus.fasta 
+  364  cat out13/05_trunc200_otus.fasta 
+  365  cd ..
+  366  cd ../ULCERS/
+  367  cd output/
+  368  cat out47/05_trunc200_otus.fasta 
+  369  cat out18/05_trunc200_otus.fasta 
+  370  mmed.fasta/config.sh 
+  371  vi 26_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  372  vi 27_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  373  vi 28_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  374  vi 29_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  375  vi 30_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  376  vi 31_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  377  vi 32_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  378  vi 33_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  379  vi 34_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  380  vi 35_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  381  vi 36_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  382  vi 37_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  383  vi 38_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  384  vi 39_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  385  vi 40_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  386  vi 41_41_strain_isolates_V1-V2.trimmed.fasta/config.sh 
+  387  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  388  ls
+  389  cd 
+  390  cd /rsgrps/bhurwitz/xiang/41strain/
+  391  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  392  ls
+  393  for file in `cat ../files`; do cd ..$file; ./testpipline.sh ; done;
+  394  qsearch -u xiangl1 | xargs qdel
+  395  qselect -u xiangl1 | xargs qdel
+  396  qstat -u xiangl1
+  397  qdel 361875
+  398  qdel 361888
+  399  qstat -u xiangl1
+  400  cd ..
+  401  ls
+  402  cd ..
+  403  cd ULCERS/
+  404  ls
+  405  cd 17_37_Ulcers_V1-V2.trimmed.fasta/
+  406  ls
+  407  vi config.sh 
+  408  cd ..
+  409  vi 18_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  410  vi 19_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  411  vi 20_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  412  vi 21_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  413  vi 22_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  414  vi 23_37_Ulcers_V1-V2.trimmed.fasta/
+  415  vi 23_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  416  qstat -u xiangl1
+  417  vi 24_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  418  vi 25_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  419  vi 26_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  420  vi 27_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  421  vi 28_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  422  vi 29_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  423  vi 28_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  424  vi 29_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  425  vi 30_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  426  vi 31_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  427  vi 32_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  428  vi 33_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  429  vi 34_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  430  vi 35_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  431  vi 36_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  432  vi 37_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  433  vi 38_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  434  vi 39_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  435  vi 40_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  436  vi 41_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  437  vi 42_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  438  vi 43_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  439  vi 44_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  440  vi 45_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  441  vi 46_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  442  vi 47_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  443  vi 48_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  444  vi 49_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  445  vi 50_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  446  vi 51_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  447  vi 52_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  448  vi 53_37_Ulcers_V1-V2.trimmed.fasta/config.sh 
+  449  cd ..
+  450  cd 41strain/
+  451  ls
+  452  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  453  cd ../output/
+  454  ls
+  455  cd ../01_41_strain_isolates_V1-V2.trimmed.fasta/
+  456  for file in `cat ../files`; do cd ../$file; ./testpipline.sh ; done;
+  457  cd ..
+  458  cd ULCERS/
+  459  ls
+  460  cd 17_37_Ulcers_V1-V2.trimmed.fasta/
+  461  for file in `cat ../files`; do cd ../$file; ./testpipline.sh ; done;
+  462  cd /rsgrps/bhurwitz/xiang/ULCERS/
+  463  ls
+  464  cd 50_37_Ulcers_V1-V2.trimmed.fasta/
+  465  ls
+  466  cp -r ../49_37_Ulcers_V1-V2.trimmed.fasta/ .
+  467  ./testpipline.sh 
+  468  cd /rsgrps/bhurwitz/xiang/ULCERS/
+  469  ls
+  470  cd 49_37_Ulcers_V1-V2.trimmed.fasta/
+  471  ls
+  472  ./testpipline.sh 
+  473  qdel 361978
+  474  vi config.sh 
+  475  ./testpipline.sh 
+  476  cd ../51_37_Ulcers_V1-V2.trimmed.fasta/
+  477  ls
+  478  ./testpipline.sh 
+  479  cd ../52_37_Ulcers_V1-V2.trimmed.fasta/
+  480  ./testpipline.sh 
+  481  cd ../53_37_Ulcers_V1-V2.trimmed.fasta/
+  482  ./testpipline.sh 
+  483  qstat -u xiangl1
+  484  cd ../50_37_Ulcers_V1-V2.trimmed.fasta/
+  485  ls
+  486  ./testpipline.sh 
+  487  /rsgrps/bhurwitz/xiang/ULCERS/50_37_Ulcers_V1-V2.trimmed.fasta/
+  488  cd /rsgrps/bhurwitz/xiang/ULCERS/50_37_Ulcers_V1-V2.trimmed.fasta/
+  489  ls
+  490  ./testpipline.sh 
+  491  qstat -u xiangl1
+  492  cd ..
+  493  cd /rsgrps/bhurwitz/xiang/
+  494  ls
+  495  cd 41strain/
+  496  ls
+  497  cd output/
+  498  ls
+  499  cd out1
+  500  ls
+  501  cd out01/
+  502  ls
+  503  cat 06-chimera-check.log 
+  504  cat 05_trunc200_otu_results.fasta 
+  505  cat 05_trunc200_otus.fasta 
+  506  cd ../out02/
+  507  ls
+  508  cat 05-for_otu_cluster.log 
+  509  cd ../out03/
+  510  ls
+  511  cat 05-for_otu_cluster.log 
+  512  cd ../out41/
+  513  ls
+  514  cd ../out01/
+  515  ls
+  516  cat 05-for_otu_cluster.log 
+  517  cat 06-chimera-check.log 
+  518  cd ../.
+  519  ls
+  520  cd ..
+  521  cd ../ULCERS/
+  522  ls
+  523  cd output/
+  524  ls
+  525  cd out17/
+  526  ls
+  527  cat 05-for_otu_cluster.log 
+  528  cat out20
+  529  cd ../out20/
+  530  ls
+  531  cat 05-for_otu_cluster.log 
+  532  cd ../..
+  533  cd ../41strain/
+  534  ls
+  535  cd output/
+  536  ls
+  537  cd out01/
+  538  ls
+  539  cd 07-map-raw-chimera.log 
+  540  cat 07-map-raw-chimera.log 
+  541  cd ../out02/
+  542  ls
+  543  cat 05-for_otu_cluster.log 
+  544  cat 06-chimera-check.log 
+  545  cd ..
+  546  cat out03/06-chimera-check.log 
+  547  cat out04/06-chimera-check.log 
+  548  cat out05/06-chimera-check.log 
+  549  cat out06/06-chimera-check.log 
+  550  cat out07/06-chimera-check.log 
+  551  cat out08/06-chimera-check.log 
+  552  cat out09/06-chimera-check.log 
+  553  cat out10/06-chimera-check.log 
+  554  cat out11/06-chimera-check.log 
+  555  cat out12/06-chimera-check.log 
+  556  cat out13/06-chimera-check.log 
+  557  cat out14/06-chimera-check.log 
+  558  cat out15/06-chimera-check.log 
+  559  cat out16/06-chimera-check.log 
+  560  cat out17/06-chimera-check.log 
+  561  cat out18/06-chimera-check.log 
+  562  cat out19/06-chimera-check.log 
+  563  cat out20/06-chimera-check.log 
+  564  cat out21/06-chimera-check.log 
+  565  cat out22/06-chimera-check.log 
+  566  cat out23/06-chimera-check.log 
+  567  cat out24/06-chimera-check.log 
+  568  cat out25/06-chimera-check.log 
+  569  cat out26/06-chimera-check.log 
+  570  cat out27/06-chimera-check.log 
+  571  cat out28/06-chimera-check.log 
+  572  cat out29/06-chimera-check.log 
+  573  cat out30/06-chimera-check.log 
+  574  cat out31/06-chimera-check.log 
+  575  cat out32/06-chimera-check.log 
+  576  cat out33/06-chimera-check.log 
+  577  cat out34/06-chimera-check.log 
+  578  cat out35/06-chimera-check.log 
+  579  cat out36/06-chimera-check.log 
+  580  cat out37/06-chimera-check.log 
+  581  cat out38/06-chimera-check.log 
+  582  cat out39/06-chimera-check.log 
+  583  cat out40/06-chimera-check.log 
+  584  cat out41/06-chimera-check.log 
+  585  cd ..
+  586  cd ../ULCERS/
+  587  cd output/
+  588  ls
+  589  cat out17/06-chimera-check.log 
+  590  cat out18/06-chimera-check.log 
+  591  cat out19/06-chimera-check.log 
+  592  cat out20/06-chimera-check.log 
+  593  cat out21/06-chimera-check.log 
+  594  cat out22/06-chimera-check.log 
+  595  cat out23/06-chimera-check.log 
+  596  cat out24/06-chimera-check.log 
+  597  cat out25/06-chimera-check.log 
+  598  cat out26/06-chimera-check.log 
+  599  cat out27/06-chimera-check.log 
+  600  cat out28/06-chimera-check.log 
+  601  cat out29/06-chimera-check.log 
+  602  cat out30/06-chimera-check.log 
+  603  cat out31/06-chimera-check.log 
+  604  cat out32/06-chimera-check.log 
+  605  cat out33/06-chimera-check.log 
+  606  cat out34/06-chimera-check.log 
+  607  cat out35/06-chimera-check.log 
+  608  cat out36/06-chimera-check.log 
+  609  cat out37/06-chimera-check.log 
+  610  cat out38/06-chimera-check.log 
+  611  cat out39/06-chimera-check.log 
+  612  cat out40/06-chimera-check.log 
+  613  cat out41/06-chimera-check.log 
+  614  cat out42/06-chimera-check.log 
+  615  cat out43/06-chimera-check.log 
+  616  cat out44/06-chimera-check.log 
+  617  cat out45/06-chimera-check.log 
+  618  cat out46/06-chimera-check.log 
+  619  cat out47/06-chimera-check.log 
+  620  cat out48/06-chimera-check.log 
+  621  cat out49/06-chimera-check.log 
+  622  cat out50/06-chimera-check.log 
+  623  cat out51/06-chimera-check.log 
+  624  cat out52/06-chimera-check.log 
+  625  ls
+  626  cd out50/
+  627  ls
+  628  cd ../outout49
+  629  cd ../out49
+  630  ls
+  631  cd ..
+  632  ls
+  633  cd 50_37_Ulcers_V1-V2.trimmed.fasta/
+  634  ls
+  635  vi config.sh 
+  636  ./testpipline.sh 
+  637  ls
+  638  cd /rsgrps/bhurwitz/xiang/
+  639  ls
+  640  cd 41strain/
+  641  ls
+  642  cd 41_41_strain_isolates_V1-V2.trimmed.fasta/
+  643  ls
+  644  vi config.sh 
+  645  cd /rsgrps/bhurwitz/hurwitzlab/data/jana
+  646  ls
+  647  :q
+  648  cd /rsgrps/bhurwitz/xiang/
+  649  ls
+  650  cd 41strain/
+  651  ls
+  652  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  653  ls
+  654  vi config.sh 
+  655  cd ..
+  656  ls
+  657  cd 02_41_strain_isolates_V1-V2.trimmed.fasta/
+  658  ls
+  659  vi 08-otu-table.sh 
+  660  cd /rsgrps/bhurwitz/hurwitzlab/bin/
+  661  ls
+  662  cd drive5_py/
+  663  ls
+  664  cd /rsgrps/bhurwitz/xiang/41strain/
+  665  ls
+  666  cd 41_41_strain_isolates_V1-V2.trimmed.fasta/
+  667  cd ..
+  668  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  669  ls
+  670  cd ../02_41_strain_isolates_V1-V2.trimmed.fasta/
+  671  ls
+  672  vi config.sh 
+  673  cd ../01_41_strain_isolates_V1-V2.trimmed.fasta/
+  674  ls
+  675  vi config.sh 
+  676  cd /rsgrps/bhurwitz/xiang/
+  677  ls
+  678  cd 41strain/
+  679  ls
+  680  cd output/
+  681  ls
+  682  cd out50
+  683  cd ../U
+  684  cd ../../ULCERS/
+  685  ls
+  686  cd output/
+  687  ls
+  688  cd ouy50
+  689  cd out50/
+  690  ls
+  691  cd RDP_6GzYH_/
+  692  ls
+  693  cat merge_map.txt 
+  694  cd ..
+  695  ls
+  696  cd 05_trunc200_otus.fasta 
+  697  cat 05_trunc200_otus.fasta 
+  698  ls
+  699  cat 05-for_otu_cluster.log 
+  700  cd ..
+  701  ls
+  702  cd 50_37_Ulcers_V1-V2.trimmed.fasta/
+  703  ls
+  704  vi config.sh 
+  705  cd ..
+  706  cd 41strain/
+  707  ls
+  708  cd output/out14/
+  709  ls
+  710  cat 05_trunc200_otus.fasta 
+  711  cd ..
+  712  ls
+  713  cd ..
+  714  ls
+  715  cd /rsgrps/bhurwitz/hurwitzlab/data/raw/GWATTS/16s_Sequencing/41_Strain_Isolates/
+  716  ls
+  717  cd George_Script_Results/
+  718  ls
+  719  vi SUMMARY.txt 
+  720  cd ..
+  721  cd /rsgrps/bhurwitz/xiang/ULCERS/
+  722  cd output/
+  723  cd out47
+  724  cat 05_trunc200_otus.fasta 
+  725  vi 05_trunc200_otus.fasta 
+  726  cd 
+  727  cd /rsgrps/bhurwitz/xiang/41strain/
+  728  ls
+  729  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  730  ls
+  731  rm *.o*
+  732  ls
+  733  vi 08-otu-table.sh 
+  734  vi 09-assign-taxonomy.sh 
+  735  cd workers/
+  736  ls
+  737  vi 08-otu-table_exec.sh 
+  738  vi 07-map-raw-chimera_exec.sh 
+  739  vi 08-otu-table_exec.sh 
+  740  cd ../..
+  741  ls
+  742  cd output/out01/
+  743  ls
+  744  cat 09_assign_taxonomy.log 
+  745  cd ..
+  746  ls
+  747  cd ..
+  748  ls
+  749  cd 41_41_strain_isolates_V1-V2.trimmed.fasta/
+  750  ls
+  751  cd workers/
+  752  ls
+  753  vi 09-assign-taxonomy_exec.sh 
+  754  vi testpipeline_exec.sh 
+  755  cd ..
+  756  ls
+  757  vi 08-otu-table.sh 
+  758  cd ..
+  759  ls
+  760  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  761  ls
+  762  vi 08-otu-table.sh 
+  763  ./testpipline.sh 
+  764  qstat 372520
+  765  cd ..
+  766  cd output/
+  767  ls
+  768  cd out01/
+  769  ls
+  770  cat 08-otu-table_for.log 
+  771  qstat 372520
+  772  qstat 08_trunc200_otu_table.txt 
+  773  cat 08_trunc200_otu_table.txt 
+  774  ls
+  775  cd 
+  776  cd /rsgrps/bhurwitz/xiang/
+  777  ls
+  778  cd 41strain/
+  779  ls
+  780  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  781  ls
+  782  vi 08-otu-table.sh 
+  783  ls
+  784  vi config.sh 
+  785  vi 03-dereplicate.sh 
+  786  vi 08-otu-table.sh 
+  787  cd workers/
+  788  ls
+  789  vi 08-otu-table_exec.sh 
+  790  cd /uaopt/qiime/
+  791  ls
+  792  1.9.0
+  793  cd 1.9.0/
+  794  ls
+  795  cd lib/
+  796  ls
+  797  cd python2.7/
+  798  ls
+  799  cd site-packages/
+  800  ls
+  801  cd qiime_default_reference
+  802  ls
+  803  cd gg_13_8_otus/
+  804  ls
+  805  cd taxonomy/
+  806  ls
+  807  head 97_otu_taxonomy.txt 
+  808  cd ../rep_set
+  809  ls
+  810  head 97_otus.fasta 
+  811  cd /rsgrps/bhurwitz/xiang/41strain/
+  812  ls
+  813  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  814  ls
+  815  vi config.sh 
+  816  vi 09-assign-taxonomy.sh 
+  817  cd workers/
+  818  ls
+  819  vi 09-assign-taxonomy_exec.sh 
+  820  cd ..
+  821  vi 04-sort-discard.sh 
+  822  vi 08-otu-table.sh 
+  823  vi 07-map-raw-chimera.sh 
+  824  cd workers/
+  825  ls
+  826  vi 07-map-raw-chimera_exec.sh 
+  827  vi 08-otu-table_exec.sh 
+  828  vi 00-filter-reads_exec.sh 
+  829  vi 09-assign-taxonomy_exec.sh 
+  830  vi testpipeline_exec.sh 
+  831  cd ..
+  832  ls
+  833  cd /rsgrps/bhurwitz/hurwitzlab/data/jana/
+  834  ls
+  835  mv run1_bc.fastq /rsgrps/bhurwitz/xiang/41strain/01_41_strain_isolates_V1-V2.trimmed.fasta/
+  836  mv map1.txt /rsgrps/bhurwitz/xiang/41strain/01_41_strain_isolates_V1-V2.trimmed.fasta/
+  837  cd /rsgrps/bhurwitz/xiang/41strain/01_41_strain_isolates_V1-V2.trimmed.fasta/
+  838  ls
+  839  ./testpipline.sh 
+  840  qstat 372527
+  841  cd ..
+  842  ls
+  843  cd output/out01/
+  844  ls
+  845  cat 02-qiime-demult.log 
+  846  qstat 372527
+  847  ls
+  848  cat 02-qiime-demult.log 
+  849  qstat 372527
+  850  ls
+  851  cd ..
+  852  ls
+  853  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  854  ls
+  855  cd workers/
+  856  ls
+  857  vi testpipeline_exec.sh 
+  858  qstat 372527
+  859  ls
+  860  cd ..
+  861  ls
+  862  cd ..
+  863  ls
+  864  cd output/
+  865  ls
+  866  cd out41/
+  867  ls
+  868  cat 08_trunc200_otu_table.txt 
+  869  ls
+  870  cat 05-for_otu_cluster.log 
+  871  cat 05_trunc200_otus.fasta 
+  872  ls
+  873  cd ..
+  874  cd 01_41_strain_isolates_V1-V2.trimmed.fasta/
+  875  ls
+  876  cd workers/
+  877  ls
+  878  vi testpipeline_exec.sh 
+  879  cd /rsgrps/bhurwitz/xiang/41strain/
+  880  ls
+  881  cd 02_41_strain_isolates_V1-V2.trimmed.fasta/
+  882  ls
+  883  cd workers/
+  884  ls
+  885  vi testpipeline_exec.sh 
+  886  cd /rsgrps/bhurwitz/hurwitzlab/data/jana/
+  887  ls
+  888  cd workers/
+  889  ls
+  890  vi testpipeline_exec.sh 
+  891  cd ..
+  892  vi config.sh 
+  893  cd /gsfs1/rsgrps/bhurwitz/hurwitzlab/data/jana
+  894  ls
+  895  cd /rsgrps/bhurwitz/xiang/
+  896  ls
+  897  acd 41strain/
+  898  cd 41strain/
+  899  ls
+  900  cd output/
+  901  ls
+  902  cd out01/
+  903  ls
+  904  cat 06-chimera-check.log 
+  905  cd 05-for_otu_cluster.log 
+  906  cat 05-for_otu_cluster.log 
+  907  cd ..
+  908  cd out02/
+  909  ls
+  910  cat 05-for_otu_cluster.log 
+  911  cd ../../01_41_strain_isolates_V1-V2.trimmed.fasta/
+  912  ls
+  913  cd config.sh 
+  914  vi config.sh 
+  915  cd /rsgrps/bhurwitz/xiang/
+  916  ls
+  917  cd 16s
+  918  ls
+  919  cd scripts/
+  920  ls
+  921  vi config.sh 
+  922  cd /rsgrps/bhurwitz/hurwitzlab/data/jana/
+  923  ls
+  924  vi config.sh 
+  925  cd /gsfs1/rsgrps/bhurwitz/hurwitzlab/data/jana
+  926  ls
+  927  vi config.sh 
+  928  cd /rsgrps/bhurwitz/
+  929  ls
+  930  cd /rsgrps
+  931  ls
+  932  cd bhurwitz/
+  933  ls
+  934  cd bonnie/
+  935  ls
+  936  cd 16s
+  937  ls
+  938  cd virsorter_uproc/
+  939  ls
+  940  cd ..
+  941  ls
+  942  cd ..
+  943  ls
+  944  cd xiang/
+  945  ls
+  946  cd 16s2
+  947  ls
+  948  cd 004_23_clinical_isolates_V1-V2.trimmed.fasta/
+  949  ls
+  950  vi config.sh 
+  951  cd ..
+  952  ks
+  953  ls
+  954  cd out12/
+  955  ls
+  956  vi 03_trunc200_derep.fna 
+  957  cat 05_trunc200_otu
+  958  cat 06-chimera-check.log 
+  959  cat 05_trunc200_otus.fasta 
+  960  cat 05-for_otu_cluster.log 
+  961  cd ..
+  962  ls
+  963  cd ..
+  964  ls
+  965  cd 41strain/
+  966  ls
+  967  cd output/
+  968  ls
+  969  cd out01/
+  970  ls
+  971  cat 05-for_otu_cluster.log 
+  972  cat 05_trunc200_otu_results.fasta 
+  973  ls
+  974  cat 05_trunc200_otus.fasta 
+  975  :q
+  976  ls
+  977  cd blast-pipeline/
+  978  ls
+  979  history
+  980  ssh
+  981  cd /rsgrps/bhurwitz/xiang/
+  982  ls
+  983  cd /rsgrps/bhurwitz/xiang/16s2/
+  984  ls
+  985  cd 004_23_clinical_isolates_V1-V2.trimmed.fasta/
+  986  ls
+  987  vi testpipline.sh 
+  988  cd /rsgrps/bhurwitz/xiang/
+  989  ;s
+  990  ls
+  991  cd 16s2
+  992  ls
+  993  cd 004_23_clinical_isolates_V1-V2.trimmed.fasta/
+  994  ls
+  995  vi config.sh 
+  996  ls
+  997  git clone https://github.com/pillow13579/ABE_587_Metagen.git
+  998  ls
+  999  cd ABE_587_Metagen/
+ 1000  ls
+ 1001  pwd
+ 1002  cd ..
+ 1003  ls
+ 1004  ls -l
+ 1005  ls -lt
+ 1006  man ls
+ 1007  ls -lt
+ 1008  ls -Fl
+ 1009  cd xiangl1/
+ 1010  ls
+ 1011  cd ABE_587_Metagen/
+ 1012  ls
+ 1013  mkdir week1_problem
+ 1014  ls
+ 1015  cd week1_problem/
+ 1016  ls
+ 1017  vi sequences.fasta
+ 1018  ls
+ 1019  wc sequences.fasta 
+ 1020  head sequences.fasta 
+ 1021  head -n1 sequences.fasta 
+ 1022  cd /rsgrps/bhurwitz/xiang/
+ 1023  ls
+ 1024  cd fasta/
+ 1025  ls
+ 1026  wc 041_MRSA_ATCC43300.bam.fa 
+ 1027  wc 042_Spneumoniae_ATCC6305.bam.fa 
+ 1028  man wc
+ 1029  vi 041_MRSA_ATCC43300.bam.fa 
+ 1030  ls
+ 1031  vi 041_MRSA_ATCC43300.bam.fa 
+ 1032  rm 041_MRSA_ATCC43300.bam.fa 
+ 1033  ls
+ 1034  cat sequences.fasta 
+ 1035  wc sequences.fasta 
+ 1036  mv sequences.fasta /home/u28/xiangl1/ABE_587_Metagen/week1_problem/
+ 1037  ls
+ 1038  cd /home/u28/xiangl1/ABE_587_Metagen/week1_problem/
+ 1039  ls
+ 1040  cd ..
+ 1041  ;s
+ 1042  ls
+ 1043  cd week1_problem/
+ 1044  ls
+ 1045  wc sequences.fasta 
+ 1046  head -1n sequences.fasta 
+ 1047  head -n1 sequences.fasta 
+ 1048  cat sequences.fasta 
+ 1049  vi sequences.fasta 
+ 1050  wc sequences.fasta 
+ 1051  wc -w sequences.fasta 
+ 1052  cd ../..
+ 1053  ls | wc -l
+ 1054  ls
+ 1055  cd ..
+ 1056  ls
+ 1057  ls | wc -l
+ 1058  cd xiangl1/ABE_587_Metagen/week1_problem/
+ 1059  ls
+ 1060  wc -c sequences.fasta 
+ 1061  head -n1 sequences.fasta 
+ 1062  tail sequences.fasta 
+ 1063  tail -n3 sequences.fasta 
+ 1064  grep '>' | wc
+ 1065  grep '>' | wc sequences.fasta 
+ 1066  grep '\>' | wc sequences.fasta 
+ 1067  grep > sequences.fasta 
+ 1068  grep "\>" sequences.fasta 
+ 1069  ls
+ 1070  cat sequences.fasta 
+ 1071  ls
+ 1072  cd /rsgrps/bhurwitz/xiang/
+ 1073  ls
+ 1074  cd fasta/
+ 1075  ls
+ 1076  vi 042_Spneumoniae_ATCC6305.bam.fa 
+ 1077  ls
+ 1078  cp sequences.fasta /home/u28/xiangl1/ABE_587_Metagen/week1_problem/
+ 1079  cd /home/u28/xiangl1/ABE_587_Metagen/week1_problem/
+ 1080  ls
+ 1081  cat sequences.fasta 
+ 1082  ls
+ 1083  wc sequences.fasta 
+ 1084  head -n1 sequences.fasta 
+ 1085  tail -n3 sequences.fasta 
+ 1086  ls
+ 1087  grep '\>L' sequences.fasta 
+ 1088  ls
+ 1089  cat sequences.fasta 
+ 1090  grep \>L sequences.fasta 
+ 1091  grep \>L sequences.fasta | wc -l
+ 1092  grep \> sequences.fasta | wc -l
+ 1093  ls
+ 1094  mv sequences.fasta week1_fasta_problem.fasta
+ 1095  ls
+ 1096  cd ../..
+ 1097  cd ..
+ 1098  ls -l
+ 1099  ls -l |wc -l
+ 1100  ls _Fl
+ 1101  ls -Fl
+ 1102  cd xiangl1/
+ 1103  ls
+ 1104  cd ABE_587_Metagen/
+ 1105  cd week1_problem/
+ 1106  ls
+ 1107  mkdir fasta
+ 1108  ls
+ 1109  cp week1_fasta_problem.fasta fasta/
+ 1110  ls
+ 1111  ls fasta/
+ 1112  ls
+ 1113  rm week1_fasta_problem.fasta 
+ 1114  ls
+ 1115  man rm
+ 1116  man cp
+ 1117  history
+ 1118  history &> unixBasics.history.txt
