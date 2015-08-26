@@ -1,0 +1,24 @@
+1. ssh xiangl1@login.hpc.arizona.edu 
+2. The full path to my home directory is '/home/u28/xiangl1'.(pwd)
+3. (cd ..)
+   0 files.(ls -Fl)
+   57 directories.(ls -l | wc -l)
+4. (vi sequences.fasta)
+5. -139 lines. (wc -l)
+   -5252 characters.(wc -c)
+   -The first line of this file is '>L9GAC:03774:03275'.(head -n1)
+   -The last 3 lines are '>L9GAC:03786:03382
+            		 ATTGTCACAGCCTTGAAGAAGGGCTTGGAGACGACTACTATTCATCCAAATGTGATTCAA
+  			 CTGGTGGAGGATACTAGCCGTGAAAGTAGTTATGCTATGATGAAGGCCAAGG'.(tail -n3)
+   -There are 45 sequences in the file.(grep \> sequences.fasta | wc -l)
+6. (mv sequences.fasta week1_fasta_problem.fasta)
+7. (mkdir fasta)
+8. (cp week1_fasta_problem.fasta fasta/)
+9. (ls fasta/)
+10.(rm week1_fasta_problem.fasta)
+11.(man rm; man cp)
+12.(history &> unixBasics.history.txt) 
+13.-(cat cuffdiff.txt | sort -n -r -k10 > sorted.cuffdiff.out)
+   -(cat sorted.cuffdiff.out | head -n100 > top100.sorted.cuffdiff.out)
+   -(cat cuffdiff.txt | awk {'print $1'} | sort -u >
+differentially.expressed.genes.txt)   
