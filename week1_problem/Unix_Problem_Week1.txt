@@ -10,7 +10,7 @@
    -The last 3 lines are '>L9GAC:03786:03382
             		 ATTGTCACAGCCTTGAAGAAGGGCTTGGAGACGACTACTATTCATCCAAATGTGATTCAA
   			 CTGGTGGAGGATACTAGCCGTGAAAGTAGTTATGCTATGATGAAGGCCAAGG'.(tail -n3)
-   -There are 45 sequences in the file.(grep \> sequences.fasta | wc -l)
+   -There are 45 sequences in the file.(grep '>' sequences.fasta | wc -l)
 6. (mv sequences.fasta week1_fasta_problem.fasta)
 7. (mkdir fasta)
 8. (cp week1_fasta_problem.fasta fasta/)
