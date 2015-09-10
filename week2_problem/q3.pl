@@ -6,5 +6,3 @@ use warnings;
 my $name = 'Xiang Liu';
 
 print $name,"\n";
-
-exit;
