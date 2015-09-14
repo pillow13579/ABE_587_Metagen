@@ -24,5 +24,3 @@ print "The total number of characters = $character_count\n";
 print "The average line length = ",$character_count/$line_count,"\n";
 
 close (IN);
-
-exit;

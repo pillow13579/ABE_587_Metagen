@@ -21,5 +21,3 @@ while ( my $line = <IN>) {
 }
 
 close (IN);
-
-exit;

@@ -22,5 +22,3 @@ if ($number1 >= 0 && $number2 >0 ) {
 
 close STDOUT;
 close STDERR;
-
-exit;

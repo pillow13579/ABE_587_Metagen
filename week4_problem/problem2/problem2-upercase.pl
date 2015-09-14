@@ -19,5 +19,3 @@ while ( my $line = <IN> ) {
 
 close(IN);
 close(OUT);
-
-exit;
