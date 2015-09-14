@@ -15,5 +15,3 @@ if (($number1+$number2) == 0 ) {
      print $number1/($number1+$number2)*100,"%\n";
 
 }
-
-exit;

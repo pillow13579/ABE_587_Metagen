@@ -17,5 +17,3 @@ if ($string1 =~ /$string2/i) {
    print "different\n";
 
 }
-
-exit;

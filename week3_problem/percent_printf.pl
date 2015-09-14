@@ -15,5 +15,3 @@ if (($number1+$number2) == 0 ) {
      printf("%.2f %% \n", $number1/($number1+$number2)*100);
 
 }
-
-exit;

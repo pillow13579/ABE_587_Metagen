@@ -14,4 +14,3 @@ if (defined ($number1 && $number2)) {
     print "please provide two numbers.\n";
 
 }
-exit;

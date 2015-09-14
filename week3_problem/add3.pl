@@ -15,4 +15,3 @@ if ($number1 >= 0 && $number2 >= 0) {
     print "please provide two positive numbers.\n";
 
 }
-exit;

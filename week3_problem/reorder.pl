@@ -15,5 +15,3 @@ if ($string1 le $string2) {
    print "$string2 $string1\n";
 
 }
-
-exit;

@@ -15,5 +15,3 @@ if ($string1 le $string2) {
    print "wrong order\n";
 
 }
-
-exit;
