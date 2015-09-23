@@ -5,20 +5,26 @@ use warnings;
 
 # read the fasta file
 my $file = 'in.fasta';
-open (IN, '<', $file) or die ("Cannot open file: $!\n");
+my $out = 'result.txt'; 
+open (my $in_fh, '<', $file) or die ("Cannot open file: $!\n");
+open (my $out_fh, '>',$out) or die ("Cannot open file: $!\n");
 
 # while loop
 my $sequence = '';
 
-while (my $line = <IN>) {
+while (my $line = <$in_fh>) {
   chomp $line;
   if ($line =~ /^>/) {
     print $line," This is the reverse complement sequence\n";
+    print $out_fh $line," This is the reverse complement sequence\n";
+
   } else {
       $line =~ tr/atcgATCG/tagcTAGC/;
       $sequence = reverse($line);
     print $sequence, "\n";
+    print $out_fh $sequence, "\n";
+
   }
 }
 
-close IN;
+close $in_fh;

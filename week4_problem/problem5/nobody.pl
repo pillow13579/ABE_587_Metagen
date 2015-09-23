@@ -5,10 +5,10 @@ use warnings;
 
 # open file
 my $file = 'Perl_III.nobody.txt';
-open ( IN, '<', $file) or die ("cannot open file: $!\n");
+open (my $in_fh, '<', $file) or die ("cannot open file: $!\n");
 
 # read contents
-while ( my $line = <IN>) {
+while ( my $line = <$in_fh>) {
     chomp $line;
     my $nobody = index ($line, 'Nobody');
     my $somebody = index ($line, 'somebody');
@@ -20,4 +20,4 @@ while ( my $line = <IN>) {
     }
 }
 
-close (IN);
+close ($in_fh);

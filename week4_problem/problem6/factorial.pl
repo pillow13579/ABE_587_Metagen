@@ -7,11 +7,11 @@ use warnings;
 my $in_file = 'numbers.txt';
 my $out_file = 'myresult.txt';
 
-open (IN, '<', $in_file) or die ("Cannot open file: $!\n");
-open (OUT, '>', $out_file) or die ("Cannot open file: $!\n");
+open (my $in_fh, '<', $in_file) or die ("Cannot open file: $!\n");
+open (my $out_fh, '>', $out_file) or die ("Cannot open file: $!\n");
 
 # while loop
-while (my $line = <IN>) {
+while (my $line = <$in_fh>) {
    chomp $line;
    if ($line % 2 == 0 && $line < 24) {
         print "$line\n";
@@ -23,9 +23,9 @@ while (my $line = <IN>) {
          $line--;
          $factorial = $factorial*$line;
       }
-      print OUT "$factorial\n"; 
+      print $out_fh "$factorial\n"; 
    } 
 }
 
-close IN;
-close OUT;
+close $in_fh;
+close $out_fh;

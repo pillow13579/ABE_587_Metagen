@@ -1,1 +1,0 @@
-usage: perl problem1-divide.pl <number1> <number2>
