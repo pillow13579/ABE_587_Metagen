@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # Week 4 problem 6
 use strict;
 use warnings;

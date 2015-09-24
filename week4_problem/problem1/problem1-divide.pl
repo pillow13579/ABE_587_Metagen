@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # Q1: script divides two numbers provided on the command line
 use strict;
 use warnings;

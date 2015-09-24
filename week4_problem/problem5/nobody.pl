@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # Perl_III.nobody.txt
 use strict;
 use warnings;

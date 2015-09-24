@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # Q2: open file make all the letters in each line uppercase.
 use strict;
 use warnings;

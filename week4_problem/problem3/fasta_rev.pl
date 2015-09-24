@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # Q3: print the reverse complement
 use strict;
 use warnings;

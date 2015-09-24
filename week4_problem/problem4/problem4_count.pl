@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # Q4: Count the number of lines and characters per line.
 use strict;
 use warnings;
