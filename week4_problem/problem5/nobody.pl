@@ -1,23 +1,23 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 # Perl_III.nobody.txt
 use strict;
 use warnings;
 
 # open file
-my $file = 'Perl_III.nobody.txt';
-open ( IN, '<', $file) or die ("cannot open file: $!\n");
+my $file = shift || 'Perl_III.nobody.txt';
+open (my $in_fh, '<', $file) or die ("cannot open file: $!\n");
 
 # read contents
-while ( my $line = <IN>) {
+while ( my $line = <$in_fh>) {
     chomp $line;
     my $nobody = index ($line, 'Nobody');
-    my $somebody = index ($line, 'somebody');
+    my $somebody = index ($line,'somebody');
     if ($nobody >= 0 ) {
-       warn ("The first position of 'Nobody' is: $nobody.\n ");
+       print "The first position of 'Nobody' is: $nobody.\n";
     }
     if ($somebody >= 0) {
-       warn ("somebody is here: $somebody.\n");
+       warn ( "warning! somebody is here: $somebody.\n");
     }
 }
 
-close (IN);
+close ($in_fh);
