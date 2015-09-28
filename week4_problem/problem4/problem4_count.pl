@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 # open the file from in.fastq
-my $file = 'in.fastq';
+my $file =shift || 'in.fastq';
 open (my $in_fh, '<', $file) or die ("cannot open file: $!\n");
 
 # initializ the counter

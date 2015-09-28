@@ -4,8 +4,8 @@ use strict;
 use warnings;
 
 # file name.
-my $in = 'file-problem2.txt';
-my $out = 'output2.txt';
+my $in  = shift ||'file-problem2.txt';
+my $out = shift || 'output2.txt';
 
 # open file read the line and uppercase the content.
 open (my $in_fh,'<',$in ) or die ("cannot open the file: $!\n");

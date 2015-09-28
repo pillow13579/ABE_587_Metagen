@@ -4,8 +4,8 @@ use strict;
 use warnings;
 
 # read the fasta file
-my $file = 'in.fasta';
-my $out = 'result.txt'; 
+my $file = shift || 'in.fasta';
+my $out  = shift || 'result.txt'; 
 open (my $in_fh, '<', $file) or die ("Cannot open file: $!\n");
 open (my $out_fh, '>',$out) or die ("Cannot open file: $!\n");
 

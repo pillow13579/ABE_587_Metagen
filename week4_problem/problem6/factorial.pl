@@ -4,8 +4,8 @@ use strict;
 use warnings;
 
 # open in and out file
-my $in_file = 'numbers.txt';
-my $out_file = 'myresult.txt';
+my $in_file  = shift ||'numbers.txt';
+my $out_file = shift ||'myresult.txt';
 
 open (my $in_fh, '<', $in_file) or die ("Cannot open file: $!\n");
 open (my $out_fh, '>', $out_file) or die ("Cannot open file: $!\n");
