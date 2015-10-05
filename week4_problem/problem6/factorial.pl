@@ -2,29 +2,30 @@
 # Week 4 problem 6
 use strict;
 use warnings;
+use autodie;
 
 # open in and out file
-my $in_file  = shift ||'numbers.txt';
-my $out_file = shift ||'myresult.txt';
+my $in_file  = shift || 'numbers.txt';
+my $out_file = shift || 'myresult.txt';
 
-open (my $in_fh, '<', $in_file) or die ("Cannot open file: $!\n");
-open (my $out_fh, '>', $out_file) or die ("Cannot open file: $!\n");
+open my $in_fh,  '<', $in_file;
+open my $out_fh, '>', $out_file;
 
 # while loop
-while (my $line = <$in_fh>) {
-   chomp $line;
-   if ($line % 2 == 0 && $line < 24) {
-        print "$line\n";
-   } 
-   else {
-      # initialize factorial
-      my $factorial = $line;
-      while ($line > 1) {
-         $line--;
-         $factorial = $factorial*$line;
-      }
-      print $out_fh "$factorial\n"; 
-   } 
+while (my $num = <$in_fh>) {
+    chomp $num;
+    if ($num % 2 == 0 && $num < 24) {
+        print "$num\n";
+    }
+    else {
+        # initialize factorial
+        my $factorial = $num;
+        while ($num > 1) {
+            $num--;
+            $factorial *= $num;
+        }
+        print $out_fh "$factorial\n";
+    }
 }
 
 close $in_fh;
