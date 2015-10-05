@@ -1,0 +1,18 @@
+1.Gardner SE, Hillis SL, Heilmann K, Segre JA, Grice EA. (2013) The neuropathic diabetic foot ulcer microbiome is associated with clinical factors. Diabetes. 62:923-30 (PMID: 23139351)
+
+2.Nonhealing diabetic foot ulcers are a common and costly complication of diabetes. Clinical signs and symptoms of infection cannot be reliably used in chronic wounds to direct antibiotic treatment, and the fine line between benign colonization and problematic bioburden from which to direct antibiotic treatment remains unclear. Targeting microbial populations to promote healing and deter infection-related complications might be a novel treatment option.
+
+3.There specific aims were to compare the three dimensions of DFU biobuiden detected by 16S rRNA gene sequencing to those obtained with traditional quantitative cultures, to examine the microbial community structure of DFUs, and to examine clinical factors associated with DFU microbiome.
+
+4.	
+• Pyrosequencing was performed on the Roche 454 FLX Titanium Instrument. Sequence quality control and analysis were performed using the mothur package.
+• Sequences were removed if they contained ambiguous bases, more than eight homopolymers, primer and/or barcode mismatches, or were 200 nt long. Low quality sequences were removed using the criteria of average quality score of .35 over 50-nt sliding windows.
+• Sequences were aligned to the SILVA reference set using mothur’s NAST based aligner. Chimeras were identified and removed using the mothur implementation of UChime and the chimera-free GOLD reference dataset. 
+• Sequences were assigned to operational taxonomic units (OTUs) using an average-neighbor clustering algorithm at a threshold of 0.03. OTUs are molecular proxies for describing organisms based on their phylogenetic relationships to other organisms. 
+• Because α and β diversity metrics are sensitive to sampling effort, they standardized the number of sequences per sample by random subsampling using the subsample in mothur. OTUs were assigned to taxonomy using the mothur-implemented naïve Bayesian classifier trained on the Ribosomal Database Project taxonomy training set 4. Staphylococcus OTUs were speciated using pplacer and a custom curated collection of Staphylococcus reference sequences.
+
+5. The data is from http://datadryad.org/resource/doi:10.5061/dryad.042vn
+
+6. Sequence file is called DFU_16s.fasta; number of reads is 296,322; file size is 110 Mb.
+
+7. SILVA reference; chimera-free GOLD reference; the Ribosomal Database Project taxonomy training set 4; a custom curated collection of Staphylococcus reference sequences
