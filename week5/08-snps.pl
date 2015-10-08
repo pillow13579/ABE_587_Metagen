@@ -4,9 +4,8 @@ use warnings;
 use feature 'say';
 use autodie;
 
-my $seq1 = shift;
-my $seq2 = shift;
-unless (defined($seq1) && defined($seq2)) {
+my ($seq1, $seq2) = @ARGV;
+unless (@ARGV == 2) {
    die "Please provide two sequences.\n";
 }
 
