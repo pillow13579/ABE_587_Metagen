@@ -17,4 +17,4 @@ for my $number (@numbers) {
   }
 }
 
-say "evens = ", join(',',@evens);
+say "evens = ", join(', ',@evens);

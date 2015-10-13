@@ -10,8 +10,7 @@ unless (@ARGV == 2) {
 }
 
 if (length($seq1) != length($seq2)) {
-   say "Please ensure the sequences are the same length.";
-   exit;   
+   die "Please ensure the sequences are the same length.\n";
 }
 
 my @n1 = split(//, $seq1);
