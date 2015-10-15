@@ -24,8 +24,6 @@ while (my $line1 = <$in_fh1>) {
 }
 close($in_fh1);
 
-my $count = 0;
-
 while (my $line2 = <$in_fh2>) {
        chomp $line2;
        @f2_words = map {lc} split(' ', $line2);
