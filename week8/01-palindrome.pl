@@ -12,7 +12,10 @@ $string =~ s/\W//g;
 
 while (length($string) > 1) {
        $string =~ /(.)(.*)(.)/i;
-       die "No\n" unless (lc($1) eq lc($3));
+       if (lc($1) ne lc($3)) {
+           say "No";
+           exit;
+       }
        $string = $2;
 }
 say "Yes";
