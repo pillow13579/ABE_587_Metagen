@@ -29,27 +29,19 @@ sub main {
            -file => $inputfile,
            -format =>'genbank'
         ); 
-        my $count = 0;
-        my @values;
-        my $value_str ='';   
-        my $total = 0;
-        my @print;
 
         while (my $seq = $seqio-> next_seq) {
            my $name = $seq->accession_number;
+           my @values;
            for my $feature ($seq->get_SeqFeatures){
-               my $primary_tag = $feature->primary_tag;
-               for my $tag ($feature ->get_all_tags){    
-                   if ($tag =~ /translation/){
-                       $count++;
-                       @values = $feature->get_tag_values($tag);
-                       $value_str = join ",", @values;
-                       push @print, "$count: $value_str"; 
-                   }    
+               if ($feature->primary_tag eq 'CDS'){
+                   push  @values, $feature->get_tag_values('translation');
                }
            }
-            $total += $count;
-            say "$name has $total CDS\n",join("\n",@print);
+           my $count = 1;
+
+           say "$name has ", scalar(@values), " CDS\n",
+                join "\n", map {$count++ . ": " . $_} @values;
         }
     }
     
