@@ -38,8 +38,8 @@ sub main {
                    push  @values, $feature->get_tag_values('translation');
                }
            }
-           my $count = 1;
 
+           my $count = 1;
            say "$name has ", scalar(@values), " CDS\n",
                 join "\n", map {$count++ . ": " . $_} @values;
         }
