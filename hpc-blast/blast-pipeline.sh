@@ -10,7 +10,7 @@ pwd
 ls *.fasta | sed "s/^\.\///" > $FILES_LIST
 
 # Step 3: split the fasta files into smaller chunks
-#$SCRIPT_DIR/run-fasta-splitter.sh
+$SCRIPT_DIR/run-fasta-splitter.sh
 
 # Step 4: run blast on each of the file chunks
 while read FILE; do
