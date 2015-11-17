@@ -10,7 +10,7 @@ pwd
 ls *.fasta | sed "s/^\.\///" > $FILES_LIST
 
 # Step 3: split the fasta files into smaller chunks
-$SCRIPT_DIR/run-fasta-splitter.sh
+#$SCRIPT_DIR/run-fasta-splitter.sh
 
 # Step 4: run blast on each of the file chunks
 while read FILE; do
@@ -24,9 +24,9 @@ while read FILE; do
     JOB_ID1=`qsub -v SCRIPT_DIR,SPLIT_FA_DIR,BLAST,EVAL,BLASTDB,BLAST_OUT_DIR,FILE -N blast -e "$STDERR_DIR" -o "$STDOUT_DIR" -J 1-$NUM_SPLIT_FILES $SCRIPT_DIR/run-blast.sh`
 
     ## parse the blast results for each of the chunked files
-    JOB_ID2=`qsub -v SCRIPT_DIR,BLAST_OUT_DIR,FILE -W depend=afterany:$JOB_ID1 -e "$STDERR_DIR" -o "$STDOUT_DIR" -J 1-$NUM_SPLIT_FILES $SCRIPT_DIR/run-parse-blast.sh`
+    JOB_ID2=$(qsub -v SCRIPT_DIR,BLAST_OUT_DIR,FILE -W depend=afterany:$JOB_ID1 -e "$STDERR_DIR" -o "$STDOUT_DIR" -J 1-$NUM_SPLIT_FILES $SCRIPT_DIR/run-parse-blast.sh)
 
     ## parse the blast results for each of the chunked files
-    JOB_ID3=`qsub -v SCRIPT_DIR,BLAST_OUT_DIR,FILE -W depend=afterany:$JOB_ID2 -e "$STDERR_DIR" -o "$STDOUT_DIR" -J 1-$NUM_SPLIT_FILES $SCRIPT_DIR/run-combine-file.sh`
+    JOB_ID3=$(qsub -v SCRIPT_DIR,BLAST_OUT_DIR,FILE -W depend=afterany:$JOB_ID2 -e "$STDERR_DIR" -o "$STDOUT_DIR" -J 1-$NUM_SPLIT_FILES $SCRIPT_DIR/run-combine-file.sh)
 
    done < $FILES_LIST
