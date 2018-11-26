@@ -10,7 +10,7 @@ if (@ARGV == 0) {
 }
 
 my @sort_string = sort {length($a) cmp length($b)} @strings;
-say "soted = ", join(',', @sort_string);
+say "sorted = ", join(', ', @sort_string);
 
 my @rev_string = sort {length($b) cmp length($a)} @strings;
-say "reverse = ", join(',', @rev_string);
+say "reverse = ", join(', ', @rev_string);

@@ -13,6 +13,6 @@ my @def_sort = sort(@numbers);
 my @num_sort = sort {$a <=> $b}@numbers;
 my @rev_sort = sort {$b <=> $a}@numbers;
 
-say "default sort = ", join(',',@def_sort);
-say "numerical sort = ", join(',',@num_sort);
-say "reverse numercial sort = ", join(',',@rev_sort);
+say "default sort = ", join(', ',@def_sort);
+say "numerical sort = ", join(', ',@num_sort);
+say "reverse numerical sort = ", join(', ',@rev_sort);
