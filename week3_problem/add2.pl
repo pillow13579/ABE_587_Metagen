@@ -5,7 +5,7 @@ use warnings;
 
 my ($number1, $number2) = @ARGV;
 
-if (defined $number1 && defined $number2)) {
+if (defined ($number1 && $number2)) {
   
     print $number1 + $number2, "\n";
 
